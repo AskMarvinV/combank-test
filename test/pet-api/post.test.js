@@ -9,7 +9,7 @@ describe('Petstore API - Pet Endpoint', () => {
 
     it('should upload an image for a pet', async () => {
         const petId = 1; 
-        const imagePath = 'test/pet-api/test-data/puppy.jpeg'; // Replace with the path to an actual image
+        const imagePath = 'test/pet-api/test-data/puppy.jpeg';
 
         const form = new FormData();
         form.append('file', fs.createReadStream(imagePath));
